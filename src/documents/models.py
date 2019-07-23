@@ -28,7 +28,7 @@ class Documents(models.Model):
     comment         = models.TextField(default=256)
     create_date     = models.DateTimeField(auto_now_add=True, null=True, blank=True, verbose_name='Dokuman Ekleme Tarihi')
     revision_date   = models.DateTimeField(auto_now_add=True, null=True, blank=True, verbose_name='Revizyon Tarihi')
-    fallow          = models.ManyToManyField('self')
+    fallow          = models.ManyToManyField('self', null=True ,blank=True)
 
 
     def __str__(self):
