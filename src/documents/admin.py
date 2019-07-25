@@ -1,10 +1,10 @@
 from django.contrib import admin
-from documents.models import Documents, Documents_Hash, Documents_user, my_codes
+from documents.models import Documents, DocumentsOwner, MyCodes
 
 # Register your models here.
 
 
 admin.site.register(Documents)
-admin.site.register(Documents_user)
-admin.site.register(Documents_Hash)
-admin.site.register(my_codes)
+admin.site.register(DocumentsOwner)
+admin.site.register(MyCodes)
+
