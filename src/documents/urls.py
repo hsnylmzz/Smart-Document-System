@@ -1,6 +1,9 @@
 from django.urls import path
-from documents.views import *
+
+from documents.views import home, file
+
 
 urlpatterns = [
-    path('', index, name='AnaSayfa'),
-]
+    path('', home, name='home'),
+    path('file/', file, name='upload files'),
+    ]
